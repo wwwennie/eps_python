@@ -1,0 +1,23 @@
+&input
+  !! file inputs
+  fil_trans     = "./test-input/Transmatrix-cubic-k50"
+  fil_eig       = "./test-input/EIGENVAL-cubic-k50"
+  fil_ibzkpt    = "./test-input/KPOINTS-cubic-k50"
+
+  !! system parameters
+  nbnd      = 32
+  kgrid     = 50 50 50             ! kpt grid size; nkx nky nkz
+  volume    = 54.3575387           ! Ang^3 
+  n_r       = 2.3	           ! index refraction
+  efermi    = -0.1289              ! Fermi energy, eV
+                                   ! from OUTCAR, knot
+  T         = 300                  ! temperature, K  
+  
+  smear     = 0.15                 ! smearing, eV
+  ismear    = 1                    ! 1 = gaussian, 2 = MP, order 2
+  aa        = 1.0                  ! adaptive smearing factor
+  rfreq     = 0.01 25.0             ! min max frequency, eV
+  stepfreq  = 0.05                 ! frequency increment, eV
+  !
+&end
+
